@@ -1,0 +1,10 @@
+<p style="color: green"><%= notice %></p>
+
+<%= render @artille %>
+
+<div>
+  <%= link_to "Edit this artille", edit_artille_path(@artille) %> |
+  <%= link_to "Back to artilles", artilles_path %>
+
+  <%= button_to "Destroy this artille", @artille, method: :delete %>
+</div>
