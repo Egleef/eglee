@@ -22,7 +22,7 @@ class ArtillesController < ApplicationController
   # POST /artilles or /artilles.json
   def create
     @artille = Artille.new(artille_params) 
-    @artille.user = User.find_by(name: artille_params["user_id"])
+   
 
     respond_to do |format|
       if @artille.save
